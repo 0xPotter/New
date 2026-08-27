@@ -1,0 +1,9 @@
+{
+  // Worker de solo assets estáticos: no hay script, Cloudflare sirve los archivos.
+  "name": "web-eventos",
+  "compatibility_date": "2026-08-26",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}

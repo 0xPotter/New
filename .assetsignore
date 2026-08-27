@@ -1,0 +1,7 @@
+# Archivos que no deben publicarse como parte del sitio estático
+serve.py
+wrangler.jsonc
+.assetsignore
+.gitignore
+README.md
+.claude/

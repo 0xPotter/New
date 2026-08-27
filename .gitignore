@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Dependencias
+node_modules/
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# Editores
+.vscode/
+*.swp
