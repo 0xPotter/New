@@ -13,6 +13,7 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
 
 
 socketserver.TCPServer.allow_reuse_address = True
-with socketserver.TCPServer(("", PORT), NoCacheHandler) as httpd:
+# Solo localhost: evita exponer el sitio en desarrollo al resto de la red.
+with socketserver.TCPServer(("127.0.0.1", PORT), NoCacheHandler) as httpd:
     print(f"Sirviendo en http://localhost:{PORT}")
     httpd.serve_forever()

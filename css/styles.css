@@ -329,6 +329,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .service__media { transition: transform 0.9s var(--ease), opacity 0.6s var(--ease); }
 
+/* Portada de cada card (antes iba como atributo style inline) */
+.service[data-service="1"] { --cover: url("../assets/img/servicios/servicio-1.webp"); }
+.service[data-service="2"] { --cover: url("../assets/img/servicios/servicio-2.webp"); }
+.service[data-service="3"] { --cover: url("../assets/img/servicios/servicio-3.webp"); }
+.service[data-service="4"] { --cover: url("../assets/img/servicios/servicio-4.webp"); }
+.service[data-service="5"] { --cover: url("../assets/img/servicios/servicio-5.webp"); }
+
 .service__slide {
   position: absolute;
   inset: 0;
@@ -387,6 +394,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   z-index: -2;
   background-size: cover;
   background-position: center;
+  background-image: var(--cover);
   transition: transform 0.9s var(--ease);
 }
 
@@ -501,6 +509,29 @@ ul { list-style: none; margin: 0; padding: 0; }
   line-height: 1.28;
   letter-spacing: -0.01em;
   color: var(--ink);
+}
+
+.notfound__back {
+  margin: clamp(30px, 4vw, 44px) 0 0;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+}
+
+.notfound__back a {
+  border-bottom: 1px solid rgba(28, 26, 23, 0.3);
+  padding-bottom: 4px;
+  transition: border-color 0.35s var(--ease);
+}
+
+.notfound__back a:hover { border-color: var(--ink); }
+
+/* La franja ocupa la pantalla cuando es la única sección (404) */
+body > .band:only-child {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ============================================================
