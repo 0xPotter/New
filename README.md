@@ -51,6 +51,5 @@ npx wrangler deploy
 
 ## Pendiente
 
-- Los textos de marca siguen en lorem ipsum
-- Las secciones `#about` y `#approach` del menú aún no existen
+- Descripciones de servicios y nombres de proyectos siguen en lorem ipsum
 - El teléfono no lleva código de país

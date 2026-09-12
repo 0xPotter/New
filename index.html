@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css?v=19" />
+  <link rel="stylesheet" href="css/styles.css?v=20" />
 </head>
 <body>
 
@@ -25,10 +25,9 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#moments">Moments</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#filosofia">Acerca de nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -145,11 +144,9 @@
 
       <div class="hero__text">
         <div class="hero__panel is-current" data-panel="0">
-          <h1 class="hero__brand">
-            <img src="assets/img/logo/logo-blanco.svg" alt="CelebrArte & Co. Eventos — Donde cada evento es una obra de arte" width="693" height="284" />
-          </h1>
-          <p class="hero__lead">Consectetur adipiscing elit sed do eiusmod tempor</p>
-          <a class="hero__cta" href="#moments">Conócenos</a>
+          <h1 class="hero__title">Momentos<br>inolvidables</h1>
+          <p class="hero__lead">Planificación, producción y mobiliario para celebraciones hechas a tu medida.</p>
+          <a class="hero__cta" href="#filosofia">Conócenos</a>
         </div>
         <div class="hero__panel" data-panel="1">
           <h2 class="hero__title">Servicio 1</h2>
@@ -182,12 +179,17 @@
   </section>
 
   <!-- ============ FRANJA SEPARADORA ============ -->
-  <section class="band">
+  <section class="band" id="filosofia">
     <div class="band__inner">
       <p class="band__eyebrow">Nuestra filosofía</p>
       <p class="band__quote">
         No organizamos eventos.<br>
         Creamos momentos que se recuerdan.
+      </p>
+      <p class="band__text">
+        Somos un equipo de diseño y producción de eventos con mobiliario propio.
+        Acompañamos cada celebración desde la primera idea hasta el último detalle,
+        para que quienes la viven solo tengan que disfrutarla.
       </p>
     </div>
   </section>
@@ -235,7 +237,7 @@
             <span class="project__index">01</span>
             <span class="project__text">
               <span class="project__name">Lorem</span>
-              <span class="project__meta">Event Consultancy</span>
+              <span class="project__meta">Consultoría de eventos</span>
             </span>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -268,7 +270,7 @@
             <span class="project__index">02</span>
             <span class="project__text">
               <span class="project__name">Ipsum</span>
-              <span class="project__meta">Curated Experience</span>
+              <span class="project__meta">Experiencia a medida</span>
             </span>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -334,7 +336,7 @@
             <span class="project__index">04</span>
             <span class="project__text">
               <span class="project__name">Sit Amet</span>
-              <span class="project__meta">Event Consultancy</span>
+              <span class="project__meta">Consultoría de eventos</span>
             </span>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -367,7 +369,7 @@
             <span class="project__index">05</span>
             <span class="project__text">
               <span class="project__name">Consectetur</span>
-              <span class="project__meta">Curated Experience</span>
+              <span class="project__meta">Experiencia a medida</span>
             </span>
             <span class="project__arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -435,14 +437,13 @@
         <a class="footer__logo" href="#hero" aria-label="CelebrArte & Co. Eventos — inicio">
           <img src="assets/img/logo/logo-blanco-compacto.svg" alt="CelebrArte & Co. Eventos" width="693" height="262" />
         </a>
-        <p class="footer__tagline">Event Consultancy · Curated Experiences</p>
+        <p class="footer__tagline">Diseño de eventos · Mobiliario · Experiencias a medida</p>
       </div>
 
       <nav class="footer__nav" aria-label="Pie de página">
-        <a href="#about">About</a>
-        <a href="#approach">Approach</a>
-        <a href="#moments">Moments</a>
-        <a href="#contact">Contact</a>
+        <a href="#hero">Inicio</a>
+        <a href="#filosofia">Acerca de nosotros</a>
+        <a href="#contact">Contacto</a>
       </nav>
 
       <div class="footer__contact">
@@ -453,7 +454,7 @@
     </div>
 
     <div class="footer__bottom">
-      <span>&copy; 2026 Lorem Ipsum. Todos los derechos reservados.</span>
+      <span>&copy; 2026 Celebrarte. Todos los derechos reservados.</span>
     </div>
   </footer>
 
@@ -479,6 +480,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=19"></script>
+  <script src="js/main.js?v=20"></script>
 </body>
 </html>
