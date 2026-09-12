@@ -974,24 +974,12 @@ body > .band:only-child {
   padding-bottom: clamp(2.6rem, 5vw, 4rem);
 }
 
-.footer__logo {
-  display: inline-flex;
-  align-items: baseline;
-  font-size: 1.35rem;
-  line-height: 1;
-}
+.footer__logo { display: inline-block; }
 
-.footer__logo-the {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.footer__logo-name {
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  margin-left: 1px;
+.footer__logo img {
+  display: block;
+  width: clamp(170px, 14vw, 210px);
+  height: auto;
 }
 
 .footer__tagline {
