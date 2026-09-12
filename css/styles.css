@@ -69,23 +69,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 .nav__logo {
   display: inline-flex;
   align-items: center;
-  font-size: 1.4rem;
-  line-height: 1;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.nav__logo-the {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.nav__logo-name {
-  font-family: var(--font-sans);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  margin-left: 1px;
+.nav__logo img {
+  display: block;
+  height: 58px;
+  width: auto;
 }
 
 /* Menú */
@@ -225,6 +215,20 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .hero__title + .hero__lead { margin-top: clamp(18px, 2.4vw, 30px); }
+
+.hero__brand {
+  margin: 0;
+  max-width: 560px;
+}
+
+.hero__brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 30px rgba(24, 20, 16, 0.4));
+}
+
+.hero__brand + .hero__lead { margin-top: clamp(20px, 2.8vw, 34px); }
 
 .hero__title {
   margin: 0;
@@ -1160,7 +1164,8 @@ body.is-locked { overflow: hidden; }
   /* row-gap a 0: la barra cerrada mide exactamente --nav-h */
   .nav { flex-wrap: wrap; height: auto; row-gap: 0; }
 
-  .nav__logo { height: var(--nav-h); font-size: 1.05rem; }
+  .nav__logo { height: var(--nav-h); }
+  .nav__logo img { height: 40px; }
 
   .nav__toggle {
     display: flex;
