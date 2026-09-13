@@ -77,7 +77,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .nav__logo img {
   display: block;
-  height: 58px;
+  height: 48px;
   width: auto;
 }
 
@@ -1150,7 +1150,7 @@ body.is-locked { overflow: hidden; }
   .nav { flex-wrap: wrap; height: auto; row-gap: 0; }
 
   .nav__logo { height: var(--nav-h); }
-  .nav__logo img { height: 40px; }
+  .nav__logo img { height: 36px; }
 
   .nav__toggle {
     display: flex;
