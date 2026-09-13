@@ -672,16 +672,16 @@ body > .band:only-child {
 .project__name {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(1.7rem, 2.6vw, 2.6rem);
+  font-size: clamp(1.6rem, 2.3vw, 2.3rem);
   line-height: 1;
   letter-spacing: -0.01em;
 }
 
 .project__meta {
-  font-size: 0.62rem;
-  text-transform: uppercase;
-  letter-spacing: 0.26em;
-  opacity: 0.55;
+  max-width: 34ch;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  opacity: 0.62;
 }
 
 .project__arrow {
