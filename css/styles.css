@@ -220,6 +220,19 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .hero__title + .hero__lead { margin-top: clamp(18px, 2.4vw, 30px); }
 
+/* Paneles de servicio: títulos más largos ("conceptualización") y
+   párrafos más densos que el de marca, así que bajan un punto. */
+.hero__panel h2.hero__title {
+  font-size: clamp(2.2rem, 4.3vw, 4.4rem);
+  max-width: 16ch;
+}
+
+.hero__panel h2 + .hero__lead {
+  max-width: 38ch;
+  font-size: clamp(0.9rem, 1.02vw, 1rem);
+  line-height: 1.6;
+}
+
 .hero__title {
   margin: 0;
   max-width: 13ch;
