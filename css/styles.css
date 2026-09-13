@@ -170,10 +170,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   position: absolute;
   inset: 0;
   z-index: -1;
+  /* Foto clara: el oscurecido se concentra donde va el texto, a la derecha,
+     y deja respirar el resto. */
   background:
-    linear-gradient(100deg, rgba(20, 17, 13, 0.74) 0%, rgba(20, 17, 13, 0.48) 44%, rgba(20, 17, 13, 0.66) 100%),
-    radial-gradient(70% 62% at 72% 52%, rgba(20, 17, 13, 0.42), transparent 72%),
-    linear-gradient(180deg, rgba(20, 17, 13, 0.42) 0%, transparent 24%, rgba(20, 17, 13, 0.44) 100%);
+    linear-gradient(100deg, rgba(20, 17, 13, 0.14) 0%, rgba(20, 17, 13, 0.18) 48%, rgba(20, 17, 13, 0.58) 74%, rgba(20, 17, 13, 0.66) 100%),
+    linear-gradient(180deg, rgba(20, 17, 13, 0.22) 0%, transparent 26%, rgba(20, 17, 13, 0.26) 100%);
 }
 
 /* Dos columnas: slider a la izquierda (sangra fuera del borde), texto a la derecha */
@@ -227,7 +228,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   font-size: clamp(2.6rem, 6vw, 6rem);
   line-height: 0.98;
   letter-spacing: -0.015em;
-  text-shadow: 0 2px 40px rgba(24, 20, 16, 0.35);
+  text-shadow: 0 2px 40px rgba(24, 20, 16, 0.5);
 }
 
 .hero__lead {
@@ -237,7 +238,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   font-weight: 300;
   line-height: 1.55;
   opacity: 0.95;
-  text-shadow: 0 1px 16px rgba(20, 17, 13, 0.6);
+  text-shadow: 0 1px 18px rgba(20, 17, 13, 0.75);
 }
 
 .hero__cta {
@@ -1187,6 +1188,12 @@ body.is-locked { overflow: hidden; }
   }
 
   .hero__text { order: -1; padding-left: var(--gutter); }
+
+  /* En una columna el texto va arriba: el oscurecido se mueve ahí */
+  .hero__scrim {
+    background:
+      linear-gradient(180deg, rgba(20, 17, 13, 0.62) 0%, rgba(20, 17, 13, 0.46) 38%, rgba(20, 17, 13, 0.22) 62%, rgba(20, 17, 13, 0.34) 100%);
+  }
   .hero__lead { max-width: none; }
 
   .services__controls { margin-top: 22px; }
