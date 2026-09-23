@@ -666,9 +666,9 @@ body > .band:only-child {
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
   width: 100%;
-  padding: 26px 44px;
+  padding: clamp(26px, 2.8vw, 38px) clamp(36px, 3.4vw, 52px);
 }
 
 .project__index {
@@ -681,7 +681,7 @@ body > .band:only-child {
 .project__text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
   flex: 1;
 }
 
@@ -695,7 +695,7 @@ body > .band:only-child {
 
 .project__meta {
   font-size: 0.88rem;
-  line-height: 1.55;
+  line-height: 1.7;
   opacity: 0.66;
 }
 
@@ -714,8 +714,8 @@ body > .band:only-child {
   content: "";
   position: absolute;
   top: 0;
-  left: 44px;
-  right: 44px;
+  left: clamp(36px, 3.4vw, 52px);
+  right: clamp(36px, 3.4vw, 52px);
   height: 1px;
   background: rgba(74, 64, 54, 0.14);
 }
@@ -767,7 +767,7 @@ body > .band:only-child {
   .project.is-open { color: var(--ink); }
   .project:focus-visible { outline-offset: -6px; }
 
-  .project__inner { padding: 22px 24px; gap: 18px; }
+  .project__inner { padding: 30px 24px; gap: 20px; }
 
   .project__name { font-size: 1.5rem; }
 
@@ -778,6 +778,7 @@ body > .band:only-child {
   }
 
   .project + .project .project__bar::before { left: 24px; right: 24px; }
+  .project__text { gap: 12px; }
 
   /* Panel desplegable */
   .project__panel {
