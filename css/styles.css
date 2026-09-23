@@ -618,12 +618,14 @@ body > .band:only-child {
   flex-direction: column;
   width: 38%;
   min-width: 460px;
-  height: 100svh;
+  /* Alto mínimo, no fijo: en pantallas bajas las filas crecen con su
+     texto en vez de recortarlo. */
+  min-height: 100svh;
 }
 
 .project {
   position: relative;
-  flex: 1 0 0;
+  flex: 1 0 auto;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -666,7 +668,7 @@ body > .band:only-child {
   align-items: center;
   gap: 24px;
   width: 100%;
-  padding: 0 44px;
+  padding: 26px 44px;
 }
 
 .project__index {
@@ -692,9 +694,9 @@ body > .band:only-child {
 }
 
 .project__meta {
-  font-size: 0.78rem;
-  line-height: 1.5;
-  opacity: 0.62;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  opacity: 0.66;
 }
 
 .project__arrow {
